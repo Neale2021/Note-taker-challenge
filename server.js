@@ -1,5 +1,5 @@
 const express = require("express")
-
+const uniqid = require('uniqid');
 const app = express()
 
 
@@ -40,7 +40,7 @@ app.get("/api/notes/", (req, res) => {
        const newNote = {
           title: req.body.title,
           text: req.body.text,
-          id: Math.random().toString(36)
+          id: uniqid(),
        }
  
        notes.push(newNote)
