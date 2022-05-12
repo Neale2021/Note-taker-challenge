@@ -16,7 +16,7 @@ const db = path.join(__dirname, 'db');
 app.get('/', function(req, res) {
     res.sendFile(path.join(public, 'index.html'));
 });
-app.get("/notes.html", (req, res) => {
+app.get("/notes", (req, res) => {
     res.sendFile(path.join(public,'notes.html'))
  });
 
