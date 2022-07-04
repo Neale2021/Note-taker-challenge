@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -16,28 +15,25 @@ body {
   cursor: pointer;
 }
 
-.note-textarea,
-.note-title {
-  color: #000000;
+.note-textarea, .note-title {
+  color: greenyellow;
   width: 100%;
-  outline: none;
-  border: none;
 }
 
 .note-textarea {
   resize: none;
-  height: calc(100% - 63px);
+  height: auto;
   padding-top: 15px;
+  font-size: large;
 }
 
 .note-title {
   height: 50px;
   margin-top: 13px;
-  font-size: 3rem;
+  font-size: 20px;
 }
 
-.note-title:read-only,
-.note-textarea:read-only {
+.note-title:read-only, .note-textarea:read-only {
   color: #757575;
 }
 
@@ -60,11 +56,6 @@ body {
   border-top-left-radius: 0;
 }
 
-.list-item-title {
-  display: inline-block;
-  width: 75%;
-}
-
 .list-container i {
   font-size: 1.1rem;
   cursor: pointer;
@@ -75,4 +66,8 @@ body {
   border-right: none;
   padding: 20px;
   cursor: pointer;
+}
+
+.col-2 {
+  padding-top: 30px;
 }
